@@ -1,0 +1,5 @@
+require_relative 'association/base'
+require_relative 'association/belongs_to'
+require_relative 'association/has_many'
+require_relative 'builder/belongs_to'
+require_relative 'builder/has_many'

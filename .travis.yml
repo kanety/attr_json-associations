@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+  - 2.7
+services:
+  - postgresql
+addons:
+  postgresql: "9.5"
+gemfile:
+  - gemfiles/rails60.gemfile
+before_script:
+  - cd spec/dummy
+  - bundle exec rake db:create db:migrate db:seed RAILS_ENV=test
+  - cd ../..
+script:
+  - bundle exec rspec
