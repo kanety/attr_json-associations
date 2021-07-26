@@ -4,13 +4,14 @@ module AttrJson::Associations
   module Record
     extend ActiveSupport::Concern
 
-    included do
-      after_initialize do
-        @attr_json_associations_cache = {}
-      end
+    def reload(...)
+      @attr_json_associations_cache = {}
+      super
     end
 
-    def reload(...)
+    private
+
+    def init_internals
       @attr_json_associations_cache = {}
       super
     end
