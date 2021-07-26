@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem "rails", "~> 6.1.0"
+gem "attr_json", "~> #{ENV['ATTR_JSON_VERSION']}"
+
+gemspec path: "../"
