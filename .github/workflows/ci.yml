@@ -19,7 +19,7 @@ jobs:
       matrix:
         ruby: [2.7, '3.0', 3.1, 3.2]
         gemfile: ['rails60', 'rails61', 'rails70']
-        attr_json: [1.3, 1.4]
+        attr_json: [1.3, 1.4, 1.5, '2.0', 2.1, 2.2]
         exclude:
           - attr_json: 1.3
             gemfile: rails70
