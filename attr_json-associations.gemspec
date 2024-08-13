@@ -21,8 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activerecord", ">= 6.0"
   spec.add_dependency "activesupport", ">= 6.0"
 
-  spec.add_development_dependency "rails", ">= 6.0"
-  spec.add_development_dependency "pg"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "simplecov"
 end
