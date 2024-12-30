@@ -4,4 +4,11 @@ gem "rails", "~> 7.0.1"
 gem "pg"
 gem "attr_json", "~> #{ENV['ATTR_JSON_VERSION']}"
 
+if RUBY_VERSION >= "3.4"
+  gem "base64"
+  gem "bigdecimal"
+  gem "drb"
+  gem "mutex_m"
+end
+
 gemspec path: "../"
