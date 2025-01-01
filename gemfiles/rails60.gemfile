@@ -6,4 +6,11 @@ gem "attr_json", "~> #{ENV['ATTR_JSON_VERSION']}"
 
 gem "psych", "~> 3.3.0"
 
+if RUBY_VERSION >= "3.4"
+  gem "base64"
+  gem "bigdecimal"
+  gem "drb"
+  gem "mutex_m"
+end
+
 gemspec path: "../"
