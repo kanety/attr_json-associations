@@ -81,7 +81,7 @@ jobs:
     env:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      ATTR_JSON_VERSION: ${{ matrix.attr_json }}
+      ATTR_JSON_VERSION: ${{ matrix.attr_json }}.0
       BUNDLE_GEMFILE: gemfiles/${{ matrix.gemfile }}.gemfile
 
     steps:
