@@ -2,6 +2,6 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem "rails", ">= 6.0"
+gem "rails", ">= 7.0"
 gem "pg"
-gem "attr_json", ">= 1.3"
+gem "attr_json", ">= 2.0"

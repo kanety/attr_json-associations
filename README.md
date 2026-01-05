@@ -4,10 +4,10 @@ A simple association extension for [attr_json](https://github.com/jrochkind/attr
 
 ## Dependencies
 
-* ruby 2.7+
-* attr_json 1.3
-* activerecord 6.0+
-* activesupport 6.0+
+* ruby 3.0+
+* attr_json 2.0+
+* activerecord 7.0+
+* activesupport 7.0+
 
 ## Installation
 
