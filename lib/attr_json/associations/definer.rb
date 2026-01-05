@@ -24,6 +24,16 @@ module AttrJson::Associations
             AttrJson::Associations::Loader::#{@type.to_s.classify}.new(assoc, self).call
         end
       RUBY
+
+      if @assoc.is_a?(AttrJson::Associations::Association::BelongsTo)
+        @klass.class_eval <<-RUBY, __FILE__, __LINE__ + 1
+          def #{@assoc.foreign_key}=(val)
+            super.tap do
+              @attr_json_associations_cache[:#{@assoc.name}] = nil
+            end
+          end
+        RUBY
+      end
     end
   end
 end
